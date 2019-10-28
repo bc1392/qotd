@@ -3,4 +3,9 @@
 
 ---
 
-*More docs coming soon...*
+### Example
+![](docs/example.png)
+
+---
+
+### [Try it Out](https://bc1392.github.io/qotd)
