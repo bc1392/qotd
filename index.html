@@ -1,22 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="en">
 
     <head>
 
         <title>QOTD</title>
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Required Meta Tags -->
+        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap & Mod CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootmod.css">
 
     </head>
 
-    <body>
+    <body class="bg-light bg-prep-img">
+
+        <!-- Sub-body Container -->
+        <div class="container-fluid my-xs-1 my-sm-2 my-md-4 my-lg-5 py-xs-1 py-sm-2 py-md-4 py-lg-5">
+            
+            <!-- Quote -->
+            <div class="row align-items-center mx-xs-4 mx-0">
+                <div class="d-xs-none col-sm-1 col-md-2"></div>
+                <div class="col py-1 py-md-2 py-lg-3 px-0 brush-black text-dark" id="qotd">
+                    <span class="d-block display-4 pb-2" id="quote"></span>
+                    <span class="d-block display-5 lead font-italic text-right" id="author"></span>
+                </div>
+                <div class="d-xs-none col-sm-1 col-md-2"></div>
+            </div>
+
+        </div>
 
         <!-- Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="qotd.js"></script>
 
     </body>
 
