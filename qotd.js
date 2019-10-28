@@ -2,7 +2,7 @@
 window.onload = function() {
 
     // GET quote from QOD.
-    $.getJSON('http://quotes.rest/qod.json', function(data) {
+    $.getJSON('https://quotes.rest/qod.json', function(data) {
 
         // Gather elements.
         quote = $('#quote'); author = $('#author');
