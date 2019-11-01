@@ -4,7 +4,7 @@
 ---
 
 ### Example
-![](docs/example.png)
+![](example.png)
 
 ---
 
