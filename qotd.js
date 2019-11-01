@@ -1,12 +1,16 @@
-// Load random quote upon window load.
+// Load QOTD & random wallpaper upon window load.
 window.onload = function() {
+
+    // Gather elements.
+    const quote = $('#quote'); const author = $('#author')
+    const qotd = $('#qotd');   const body = $('body')
+
+    // Set wallpaper.
+    const wallpaper = `wp${Math.floor(Math.random() * 10)}.jpeg`
+    body.css('background-image', `url('${wallpaper}')`)
 
     // GET quote from QOD.
     $.getJSON('https://quotes.rest/qod.json', function(data) {
-
-        // Gather elements.
-        quote = $('#quote'); author = $('#author');
-        qotd = $('#qotd'); body = $('body')
 
         // Make sure QOD was successful.
         if (data.success != undefined) {
@@ -14,10 +18,6 @@ window.onload = function() {
             // Populate fields with quote contents.
             quote.text(data.contents.quotes[0].quote)
             author.text('- ' + data.contents.quotes[0].author)
-
-            // Set new styles.
-            body.css('background-image', `url('${data.contents.quotes[0].background}')`)
-            qotd.removeClass('text-dark'); qotd.addClass('text-light')
 
         } else {
 
