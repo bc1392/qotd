@@ -3,11 +3,11 @@ window.onload = function() {
 
     // Gather elements.
     const quote = $('#quote'); const author = $('#author')
-    const qotd = $('#qotd');   const body = $('body')
+    const qotd = $('#qotd');   const wrapper = $('.big-ol-wrapper')
 
     // Set wallpaper.
     const wallpaper = `wp${Math.floor(Math.random() * 10)}.jpeg`
-    body.css('background-image', `url('${wallpaper}')`)
+    wrapper.css('background-image', `url('${wallpaper}')`)
 
     // GET quote from QOD.
     $.getJSON('https://quotes.rest/qod.json', function(data) {
